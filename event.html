@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>KELOMPOK_KKN_242_UINSGDBANDUNG_2023</title>
+<style type="text/css">
+    body {
+        padding: 5px;
+    }
+a{
+text-decoration:none;
+font-size: 2rem;
+color: white;
+}
+.heading {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  color: var(--purple);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1rem;
+  text-align: center;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+}
+
+#event a {
+    color: black;
+}
+#event th {
+    border: 5px solid green;
+}
+.numbertext {
+  color: black;
+  font-size: 24px;
+  padding: 8px 12px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: green;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 5px 5%;
+
+}
+.container .main-video {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container .main-video video {
+  width: 100%;
+  border-radius: 5px;
+}
+.container .main-video .title {
+  color: #333;
+  font-size: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container .video-list {
+  background: #fff;
+  border-radius: 5px;
+  height: 520px;
+  overflow-y: scroll;
+}
+.container .video-list::-webkit-scrollbar {
+  width: 7px;
+}
+.container .video-list::-webkit-scrollbar-track{
+  background: #ccc;
+  border-radius: 50px;
+
+}
+.container .video-list::-webkit-scrollbar-thumb{
+  background: #666;
+  border-radius: 50px;
+
+}
+
+.container .video-list .vid video {
+  width: 100px;
+  border-radius: 5px;
+}
+.container .video-list .vid {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+.container .video-list .vid:hover {
+  background: #eee;
+}
+.container .video-list .vid.active {
+  background: #2980b9;
+}
+.container .video-list .vid.active .title {
+  color: #fff;
+}
+.container .video-list .vid .title {
+  color: #333;
+  font-size: 17px;
+}
+@media (max-width:991px) {
+  .container {
+  grid-template-columns: 1.5fr 1fr;
+  padding: 10px;
+}
+}
+@media (max-width:768px) {
+  .container {
+  grid-template-columns: 1fr;
+}
+}
+</style>
+</head>
+<body>
+    <p style="background-color:green; text-align:center; font-size:2rem; color:white; padding: 4px;">KKN MAHASISWA UIN SGD BANDUNG DESA CIHAMPELAS 2023</p>
+<table>
+    <thead>
+        <th style="width: 50%; text-align: justify;"><center><img src="logokkn.jpg" style="width:30%; border-radius: 50%;"></center>
+            Kuliah Kerja Nyata (KKN) adalah kegiatan Mahasiswa semester 6 UIN Sunan Gunung Djati Bandung
+            2023 yang terjun langsung ke masyarakat dengan tujuan untuk menjadi pembelajaran dan juga pengalaman 
+            terutama dalam menganalisa dan memecahkan problematika. Sehingga ketika lulus kuliah Mahasiswa
+            dapat menjadi orang yang dapat membantu dan merubah kondisi lingkungan yang lebih baik.</th>
+            <th style="width: 50%;">
+              <div class="autoslide fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="foto_gallery/foto (49).jpg" style="width: 50%;"> <br><br>
+            </div>
+            <div class="autoslide fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="foto_gallery/foto (34).jpg" style="width: 50%;"> <br><br>
+            </div>
+            <div class="autoslide fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="foto_gallery/foto (4).jpg" style="width: 50%;"> <br><br>
+            </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+                  <br>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("autoslide");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+    </thead>
+</table>
+<table style="width: 100%; background-color: green;">
+<thead>
+<th><a href="anggota.html" >Anggota</a></th>
+<th><a href="event.html" >Event</a></th>
+<th><a href="foto.html" >Foto</a></th>
+<th><a href="video.html" >Video</a></th>
+</tr>
+</thead>
+</table>
+<div class="heading">YA BELUM ADA</div>
+  <!--<div class="event">
+<div class="container">
+  <div class="main-video">
+    <div class="video">
+      <video src="video_kkn/video (1).mp4" controls muted autoplay></video>
+      <h3 class="title">1. Sekolah alam</h3>
+    </div>
+  </div>
+  <div class="video-list">
+    <div class="vid active">
+      <video src="video_kkn/video (1).mp4" muted></video>
+      <h3 class="title">1. Sekolah alam</h3>
+    </div>
+    <div class="vid">
+      <video src="video_kkn/video (2).mp4" muted></video>
+      <h3 class="title">2. Sekolah alam</h3>
+    </div>
+    <div class="vid">
+      <video src="video_kkn/video (1).mp4" muted></video>
+      <h3 class="title">3. Sekolah alam</h3>
+    </div>
+    <div class="vid">
+      <video src="video_kkn/video (2).mp4" muted></video>
+      <h3 class="title">4. Sekolah alam</h3>
+    </div>
+    <div class="vid">
+      <video src="video_kkn/video (1).mp4" muted></video>
+      <h3 class="title">5. Sekolah alam</h3>
+    </div>
+  </div>
+</div>
+
+<script>
+  let listVideo = document.querySelectorAll('.video-list .vid');
+  let mainVideo = document.querySelector('.main-video video');
+  let title = document.querySelector('.main-video .title');
+
+  listVideo.forEach(video => {
+    video.onclick = () => {
+      listVideo.forEach(vid => vid.classList.remove('active'));
+      video.classList.add('active');
+      if(video.classList.contains('active')) {
+        let src = video.children[0].getAttribute('src');
+        mainVideo.src = src;
+        let text = video.children[1].innerHTML;
+        title.innerHTML = text;
+      };
+    };
+  });
+</script>-->
+</body>
+</html>

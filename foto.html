@@ -1,0 +1,482 @@
+<html>
+
+<head>
+  <title>KELOMPOK_KKN_242_UINSGDBANDUNG_2023</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+  <script src="https://kit.fontawesome.com/2b42b2a049.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+    body {
+      padding: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .numbertext {
+      color: black;
+      font-size: 24px;
+      padding: 8px 12px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: green;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .foto {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .foto a {
+      height: 250px;
+      width: 350px;
+      margin: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 3px 5px black;
+    }
+
+    .foto a img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .foto a img:hover {
+      transform: scale(1.3);
+    }
+
+    .heading {
+      font-size: 3rem;
+      margin: 2rem 0;
+      text-transform: capitalize;
+      color: var(--purple);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      letter-spacing: 1rem;
+      text-align: center;
+      text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+    }
+
+    .lagu {
+      background: fixed;
+      background-color: black;
+      align-items: center;
+      align-content: absolute;
+      align-self: center;
+      padding: 5px;
+    }
+
+    .lagu i {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="background-color:green; text-align:center; font-size:2rem; color:white; padding: 4px;">KKN MAHASISWA UIN SGD
+    BANDUNG DESA CIHAMPELAS 2023</p>
+  <table>
+    <thead>
+      <th style="width: 50%; text-align: justify;">
+        <center><img src="logokkn.jpg" style="width:30%; border-radius: 50%;"></center>
+        Kuliah Kerja Nyata (KKN) adalah kegiatan Mahasiswa semester 6 UIN Sunan Gunung Djati Bandung
+        2023 yang terjun langsung ke masyarakat dengan tujuan untuk menjadi pembelajaran dan juga pengalaman
+        terutama dalam menganalisa dan memecahkan problematika. Sehingga ketika lulus kuliah Mahasiswa
+        dapat menjadi orang yang dapat membantu dan merubah kondisi lingkungan yang lebih baik.
+      </th>
+      <th style="width: 50%;">
+        <div class="autoslide fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="foto_gallery/foto (49).jpg" style="width: 50%;"> <br><br>
+      </div>
+      <div class="autoslide fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="foto_gallery/foto (34).jpg" style="width: 50%;"> <br><br>
+      </div>
+      <div class="autoslide fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="foto_gallery/foto (4).jpg" style="width: 50%;"> <br><br>
+      </div>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <br>
+        <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("autoslide");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+        </script>
+    </thead>
+  </table>
+  <table style="width: 100%; background-color: green;">
+    <thead>
+      <th><a href="anggota.html">Anggota</a></th>
+      <th><a href="event.html">Event</a></th>
+      <th><a href="foto.html">Foto</a></th>
+      <th><a href="video.html">Video</a></th>
+      </tr>
+    </thead>
+  </table> <br>
+  <audio controls loop>
+    <source src="lagu/Sampai Jumpa.mp3">
+  </audio>
+  <audio controls loop>
+    <source src="lagu/Christina_Perri_-_A_Thousand_Years(128k).mp3">
+  </audio>
+  <audio controls loop>
+    <source src="lagu/Angel 9 Band - Masa SMA.mp3">
+</audio>
+<!--<audio controls loop>
+    <source src="lagu/Kamu dan Kenangan  OST Habibie Ainun 3.mp3">
+</audio>-->
+
+  <div class="heading">FOTO GALLERY</div>
+  <div class="foto">
+    <a href="foto_kkn_lanskap/foto_kkn (2).jpg" style="width: 75%; height: 50%;">
+      <img src="foto_kkn_lanskap/foto_kkn (2).jpg">
+    </a>
+
+    <a href="foto_gallery/foto (1).jpg">
+      <img src="foto_gallery/foto (1).jpg">
+    </a>
+    <a href="foto_gallery/foto (2).jpg">
+      <img src="foto_gallery/foto (2).jpg">
+    </a>
+    <a href="foto_gallery/foto (3).jpg">
+      <img src="foto_gallery/foto (3).jpg">
+    </a>
+    <a href="foto_gallery/foto (4).jpg">
+      <img src="foto_gallery/foto (4).jpg">
+    </a>
+    <a href="foto_gallery/foto (5).jpg">
+      <img src="foto_gallery/foto (5).jpg">
+    </a>
+    <a href="foto_gallery/foto (6).jpg">
+      <img src="foto_gallery/foto (6).jpg">
+    </a>
+
+
+    <a href="foto_gallery/foto (7).jpg">
+      <img src="foto_gallery/foto (7).jpg">
+    </a>
+    <a href="foto_gallery/foto (8).jpg">
+      <img src="foto_gallery/foto (8).jpg">
+    </a>
+    <a href="foto_gallery/foto (9).jpg">
+      <img src="foto_gallery/foto (9).jpg">
+    </a>
+    <a href="foto_gallery/foto (10).jpg">
+      <img src="foto_gallery/foto (10).jpg">
+    </a>
+    <a href="foto_gallery/foto (11).jpg">
+      <img src="foto_gallery/foto (11).jpg">
+    </a>
+    <a href="foto_gallery/foto (12).jpg">
+      <img src="foto_gallery/foto (12).jpg">
+    </a>
+
+
+    <a href="foto_gallery/foto (13).jpg">
+      <img src="foto_gallery/foto (13).jpg">
+    </a>
+    <a href="foto_gallery/foto (14).jpg">
+      <img src="foto_gallery/foto (14).jpg">
+    </a>
+    <a href="foto_gallery/foto (15).jpg">
+      <img src="foto_gallery/foto (15).jpg">
+    </a>
+
+
+    <a href="foto_gallery/foto (16).jpg">
+      <img src="foto_gallery/foto (16).jpg">
+    </a>
+    <a href="foto_gallery/foto (17).jpg">
+      <img src="foto_gallery/foto (17).jpg">
+    </a>
+    <a href="foto_gallery/foto (18).jpg">
+      <img src="foto_gallery/foto (18).jpg">
+    </a>
+
+    <a href="foto_gallery/foto (19).jpg">
+      <img src="foto_gallery/foto (19).jpg">
+    </a>
+    <a href="foto_gallery/foto (20).jpg">
+      <img src="foto_gallery/foto (20).jpg">
+    </a>
+    <a href="foto_gallery/foto (21).jpg">
+      <img src="foto_gallery/foto (21).jpg">
+    </a>
+    <a href="foto_gallery/foto (22).jpg">
+      <img src="foto_gallery/foto (22).jpg">
+    </a>
+    <a href="foto_gallery/foto (23).jpg">
+      <img src="foto_gallery/foto (23).jpg">
+    </a>
+    <a href="foto_gallery/foto (24).jpg">
+      <img src="foto_gallery/foto (24).jpg">
+    </a><a href="foto_gallery/foto (25).jpg">
+      <img src="foto_gallery/foto (25).jpg">
+    </a>
+    <a href="foto_gallery/foto (26).jpg">
+      <img src="foto_gallery/foto (26).jpg">
+    </a>
+    <a href="foto_gallery/foto (27).jpg">
+      <img src="foto_gallery/foto (27).jpg">
+    </a>
+    <a href="foto_gallery/foto (28).jpg">
+      <img src="foto_gallery/foto (28).jpg">
+    </a>
+    <a href="foto_gallery/foto (29).jpg">
+      <img src="foto_gallery/foto (29).jpg">
+    </a>
+    <a href="foto_gallery/foto (30).jpg">
+      <img src="foto_gallery/foto (30).jpg">
+
+
+    </a><a href="foto_gallery/foto (31).jpg">
+      <img src="foto_gallery/foto (31).jpg">
+    </a>
+    <a href="foto_gallery/foto (32).jpg">
+      <img src="foto_gallery/foto (32).jpg">
+
+    </a>
+    <a href="foto_gallery/foto (33).jpg">
+      <img src="foto_gallery/foto (33).jpg">
+    </a><a href="foto_gallery/foto (34).jpg">
+      <img src="foto_gallery/foto (34).jpg">
+    </a>
+    </a><a href="foto_gallery/foto (71).jpg">
+      <img src="foto_gallery/foto (72).jpg">
+    </a>
+    <a href="foto_gallery/foto (73).jpg">
+      <img src="foto_gallery/foto (73).jpg">
+    </a><a href="foto_gallery/foto (74).jpg">
+      <img src="foto_gallery/foto (74).jpg">
+    </a>
+    <a href="foto_gallery/foto (75).jpg">
+      <img src="foto_gallery/foto (75).jpg">
+    </a><a href="foto_gallery/foto (76).jpg">
+      <img src="foto_gallery/foto (76).jpg">
+    </a>
+    <a href="foto_gallery/foto (77).jpg">
+      <img src="foto_gallery/foto (77).jpg">
+    </a><a href="foto_gallery/foto (78).jpg">
+      <img src="foto_gallery/foto (78).jpg">
+    </a>
+    <a href="foto_gallery/foto (79).jpg">
+      <img src="foto_gallery/foto (79).jpg">
+    </a><a href="foto_gallery/foto (80).jpg">
+      <img src="foto_gallery/foto (80).jpg">
+    </a>
+    <a href="foto_gallery/foto (81).jpg">
+      <img src="foto_gallery/foto (81).jpg">
+    </a><a href="foto_gallery/foto (82).jpg">
+      <img src="foto_gallery/foto (82).jpg">
+    </a>
+    <a href="foto_gallery/foto (83).jpg">
+      <img src="foto_gallery/foto (83).jpg">
+    </a><a href="foto_gallery/foto (84).jpg">
+      <img src="foto_gallery/foto (84).jpg">
+    </a>
+    <a href="foto_gallery/foto (85).jpg">
+      <img src="foto_gallery/foto (85).jpg">
+    </a><a href="foto_gallery/foto (86).jpg">
+      <img src="foto_gallery/foto (86).jpg">
+    </a>
+    <a href="foto_gallery/foto (87).jpg">
+      <img src="foto_gallery/foto (87).jpg">
+    </a><a href="foto_gallery/foto (88).jpg">
+      <img src="foto_gallery/foto (88).jpg">
+    </a>
+    <a href="foto_gallery/foto (32).jpg">
+      <img src="foto_gallery/foto (32).jpg">
+
+
+
+
+      <a href="foto_gallery/foto (35).jpg">
+        <img src="foto_gallery/foto (35).jpg">
+      </a>
+      <a href="foto_gallery/foto (36).jpg">
+        <img src="foto_gallery/foto (36).jpg">
+      </a>
+      <a href="foto_gallery/foto (37).jpg">
+        <img src="foto_gallery/foto (37).jpg">
+      </a>
+      <a href="foto_gallery/foto (59).jpg">
+        <img src="foto_gallery/foto (59).jpg">
+      </a>
+      <a href="foto_gallery/foto (60).jpg">
+        <img src="foto_gallery/foto (60).jpg">
+      </a>
+      <a href="foto_gallery/foto (61).jpg">
+        <img src="foto_gallery/foto (61).jpg">
+      </a>
+
+
+      <a href="foto_gallery/foto (38).jpg">
+        <img src="foto_gallery/foto (38).jpg">
+      </a>
+      <a href="foto_gallery/foto (39).jpg">
+        <img src="foto_gallery/foto (39).jpg">
+      </a>
+      <a href="foto_gallery/foto (40).jpg">
+        <img src="foto_gallery/foto (40).jpg">
+      </a>
+      <a href="foto_gallery/foto (41).jpg">
+        <img src="foto_gallery/foto (42).jpg">
+      </a>
+      <a href="foto_gallery/foto (43).jpg">
+        <img src="foto_gallery/foto (43).jpg">
+        <a href="foto_gallery/foto (62).jpg">
+          <img src="foto_gallery/foto (62).jpg">
+        </a>
+        <a href="foto_gallery/foto (63).jpg">
+          <img src="foto_gallery/foto (63).jpg">
+
+
+        </a>
+        <a href="foto_gallery/foto (44).jpg">
+          <img src="foto_gallery/foto (44).jpg">
+        </a>
+        <a href="foto_gallery/foto (45).jpg">
+          <img src="foto_gallery/foto (45).jpg">
+        </a>
+        <a href="foto_gallery/foto (46).jpg">
+          <img src="foto_gallery/foto (46).jpg">
+        </a>
+        <a href="foto_gallery/foto (64).jpg">
+          <img src="foto_gallery/foto (64).jpg">
+        </a>
+        <a href="foto_gallery/foto (65).jpg">
+          <img src="foto_gallery/foto (65).jpg">
+        </a>
+
+
+
+        <a href="foto_gallery/foto (47).jpg">
+          <img src="foto_gallery/foto (47).jpg">
+        </a>
+        <a href="foto_gallery/foto (50).jpg">
+          <img src="foto_gallery/foto (50).jpg">
+        </a>
+        <a href="foto_gallery/foto (49).jpg">
+          <img src="foto_gallery/foto (49).jpg">
+        </a>
+        <a href="foto_gallery/foto (50).jpg">
+          <img src="foto_gallery/foto (50).jpg">
+        </a>
+        <a href="foto_gallery/foto (66).jpg">
+          <img src="foto_gallery/foto (66).jpg">
+        </a>
+        <a href="foto_gallery/foto (67).jpg">
+          <img src="foto_gallery/foto (67).jpg">
+        </a>
+        <a href="foto_gallery/foto (68).jpg">
+          <img src="foto_gallery/foto (68).jpg">
+        </a>
+        <a href="foto_gallery/foto (70).jpg">
+          <img src="foto_gallery/foto (70).jpg">
+        </a>
+        <a href="foto_gallery/foto (45).jpg">
+          <img src="foto_gallery/foto (45).jpg">
+        </a>
+
+        <a href="foto_gallery/foto (51).jpg">
+          <img src="foto_gallery/foto (51).jpg">
+        </a>
+        <a href="foto_gallery/foto (52).jpg">
+          <img src="foto_gallery/foto (52).jpg">
+        </a>
+        <a href="foto_gallery/foto (53).jpg">
+          <img src="foto_gallery/foto (53).jpg">
+        </a>
+        <a href="foto_gallery/foto (54).jpg">
+          <img src="foto_gallery/foto (54).jpg">
+        </a>
+
+        <a href="foto_gallery/foto (55).jpg">
+          <img src="foto_gallery/foto (55).jpg">
+        </a>
+        <a href="foto_gallery/foto (56).jpg">
+          <img src="foto_gallery/foto (56).jpg">
+        </a>
+        <a href="foto_gallery/foto (57).jpg">
+          <img src="foto_gallery/foto (57).jpg">
+        </a>
+        <a href="foto_gallery/foto (58).jpg">
+          <img src="foto_gallery/foto (58).jpg">
+        </a>
+
+
+
+        <a href="foto_gallery/foto (11).jpg">
+          <img src="foto_gallery/foto (11).jpg">
+        </a>
+        <a href="foto_gallery/foto (12).jpg">
+          <img src="foto_gallery/foto (12).jpg">
+        </a>
+        <a href="foto_gallery/foto (11).jpg">
+          <img src="foto_gallery/foto (11).jpg">
+        </a>
+        <a href="foto_gallery/foto (12).jpg">
+          <img src="foto_gallery/foto (12).jpg">
+        </a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+  <script>
+    lightGallery(document.querySelector('.foto'));
+  </script>
+</body>
+
+</html>

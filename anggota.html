@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>KELOMPOK_KKN_242_UINSGDBANDUNG_2023</title>
+<style type="text/css">
+    body {
+        padding: 5px;
+    }
+a{
+text-decoration:none;
+font-size: 2rem;
+color: white;
+}
+#foto1 img:hover {
+    border: 5px solid red;
+    width: 80%;
+    border-radius: 20px;
+}
+#foto2 img:hover {
+    border: 5px solid yellow;
+    width: 80%;
+    border-radius: 20px;
+}
+#foto3 img:hover {
+    border: 5px solid green;
+    width: 80%;
+    border-radius: 20px;
+}
+#foto4 img:hover {
+    border: 5px solid blue;
+    width: 80%;
+    border-radius: 20px;
+}
+#foto5 img:hover {
+    border: 5px solid grey;
+    width: 80%;
+    border-radius: 20px;
+}
+.numbertext {
+  color: black;
+  font-size: 24px;
+  padding: 8px 12px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: green;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+    <p style="background-color:green; text-align:center; font-size:2rem; color:white; padding: 4px;">KKN MAHASISWA UIN SGD BANDUNG DESA CIHAMPELAS 2023</p>
+<table>
+    <thead>
+        <th style="width: 50%; text-align: justify;"><center><img src="logokkn.jpg" style="width:30%; border-radius: 50%;"></center>
+            Kuliah Kerja Nyata (KKN) adalah kegiatan Mahasiswa semester 6 UIN Sunan Gunung Djati Bandung
+            2023 yang terjun langsung ke masyarakat dengan tujuan untuk menjadi pembelajaran dan juga pengalaman 
+            terutama dalam menganalisa dan memecahkan problematika. Sehingga ketika lulus kuliah Mahasiswa
+            dapat menjadi orang yang dapat membantu dan merubah kondisi lingkungan yang lebih baik.</th>
+            <th style="width: 50%;">
+              <div class="autoslide fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="foto_gallery/foto (49).jpg" style="width: 50%;"> <br><br>
+            </div>
+            <div class="autoslide fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="foto_gallery/foto (34).jpg" style="width: 50%;"> <br><br>
+            </div>
+            <div class="autoslide fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="foto_gallery/foto (4).jpg" style="width: 50%;"> <br><br>
+            </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+                  <br>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("autoslide");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+    </thead>
+</table>
+<table style="width: 100%; background-color: green;">
+<thead>
+<th><a href="anggota.html" >Anggota</a></th>
+<th><a href="event.html" >Event</a></th>
+<th><a href="foto.html" >Foto</a></th>
+<th><a href="video.html" >Video</a></th>
+</tr>
+</thead>
+</table>
+<center><table>
+
+    <tr id="foto1">
+        <th><img src="foto/foto (13).png" width="100%"></th>
+        <th><img src="foto/foto (14).png" width="100%"></th>
+        <th><img src="foto/foto (15).png" width="100%"></th>
+        </tr>
+    
+        <tr id="foto2">
+            <th><img src="foto/foto (10).png" width="100%"></th>
+            <th><img src="foto/foto (11).png" width="100%"></th>
+            <th><img src="foto/foto (12).png" width="100%"></th>
+            </tr>
+
+            <tr id="foto3">
+                <th><img src="foto/foto (7).png" width="100%"></th>
+                <th><img src="foto/foto (8).png" width="100%"></th>
+                <th><img src="foto/foto (9).png" width="100%"></th>
+                </tr>
+
+                <tr id="foto4">
+                    <th><img src="foto/foto (4).png" width="100%"></th>
+                    <th><img src="foto/foto (5).png" width="100%"></th>
+                    <th><img src="foto/foto (6).png" width="100%"></th>
+                    </tr>
+
+                    <tr id="foto5">
+                        <th><img src="foto/foto (1).png" width="100%"></th>
+                        <th><img src="foto/foto (2).png" width="100%"></th>
+                        <th><img src="foto/foto (3).png" width="100%"></th>
+                        </tr>
+</table></center>
+
+</body>
+</html>
